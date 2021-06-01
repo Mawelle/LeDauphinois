@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+
+            <ImageView
+                android:id="@+id/photo_recette"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <TextView
+                android:id="@+id/titre_cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Titre"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/photo_recette"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/duree_cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="durée"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/ic_horloge"
+                app:layout_constraintTop_toBottomOf="@+id/titre_cardView" />
+
+            <TextView
+                android:id="@+id/nbPersonnes_cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nb personnes"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/duree_cardView"
+                app:layout_constraintTop_toBottomOf="@+id/duree_cardView" />
+
+            <ImageView
+                android:id="@+id/ic_horloge"
+                android:layout_width="14dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:src="@drawable/ic_horloge"
+                app:layout_constraintStart_toStartOf="@+id/titre_cardView"
+                app:layout_constraintTop_toBottomOf="@+id/titre_cardView" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="14dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_peoples"
+                app:layout_constraintStart_toStartOf="@+id/ic_horloge"
+                app:layout_constraintTop_toBottomOf="@+id/ic_horloge" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

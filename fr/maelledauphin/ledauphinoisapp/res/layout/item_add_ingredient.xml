@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Silver"
+        android:layout_marginLeft="10dp">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_nomIngredient"
+            android:layout_width="170dp"
+            android:layout_height="40dp"/>
+
+    </FrameLayout>
+    <EditText
+        android:id="@+id/et_quantiteIngredient"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/Silver"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_height="40dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Silver">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_typeQuantiteIngredient"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            />
+
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_remove_ingredient"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_close"
+        app:tint="@color/black"
+        />
+
+</LinearLayout>

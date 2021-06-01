@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.utilisateur.ModifierRecetteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="377dp"
+            android:layout_height="156dp">
+
+            <EditText
+                android:id="@+id/ajout_txtNom"
+                android:layout_width="203dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Pourpre"
+                android:hint="(ex: Gratin Dauphinois)"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ajout_iv_photoRecette"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ajout_iv_photoRecette"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/Pourpre"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/ajout_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@+id/ajout_txtNom"
+                app:layout_constraintTop_toBottomOf="@+id/ajout_txtNom"
+                app:srcCompat="@drawable/ic_horloge" />
+
+            <TextView
+                android:id="@+id/ajout_textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="min"
+                app:layout_constraintBottom_toBottomOf="@+id/ajout_ed_temps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.155"
+                app:layout_constraintStart_toEndOf="@+id/ajout_ed_temps"
+                app:layout_constraintTop_toTopOf="@+id/ajout_ed_temps"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/ajout_ed_temps"
+                android:layout_width="56dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/Pourpre"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/ajout_imageView"
+                app:layout_constraintTop_toTopOf="@+id/ajout_imageView"
+                app:layout_constraintVertical_bias="0.578" />
+
+            <TextView
+                android:id="@+id/ajout_textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="personne(s)"
+                app:layout_constraintBottom_toBottomOf="@+id/ajout_tv_nb_personne"
+                app:layout_constraintStart_toEndOf="@+id/ajout_tv_nb_personne"
+                app:layout_constraintTop_toTopOf="@+id/ajout_tv_nb_personne"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/ajout_tv_nb_personne"
+                android:layout_width="59dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:backgroundTint="@color/Pourpre"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/ajout_imageView3"
+                app:layout_constraintStart_toEndOf="@+id/ajout_imageView3"
+                app:layout_constraintTop_toTopOf="@+id/ajout_imageView3"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/ajout_imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toStartOf="@+id/ajout_imageView"
+                app:layout_constraintTop_toBottomOf="@+id/ajout_imageView"
+                app:srcCompat="@drawable/ic_peoples" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/ajout_view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ajout_constraintLayout3"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/ajout_textView"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="Ingrédients :"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/ajout_btn_ajouterIngredient"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:drawableRight="@drawable/ic_float_add"
+                android:text="Ajouter"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ajout_ll_ingredients" />
+
+            <LinearLayout
+                android:id="@+id/ajout_ll_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ajout_textView">
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/ajout_view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/ajout_btn_ajouterEtape"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:drawableRight="@drawable/ic_float_add"
+                android:text="Ajouter"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ajout_ll_numEtapeRecette" />
+
+            <LinearLayout
+                android:id="@+id/ajout_ll_numEtapeRecette"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.288" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/ajout_view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/ajout_btn_valider"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Valider"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</ScrollView>
